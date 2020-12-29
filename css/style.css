@@ -1,0 +1,156 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+.container{
+    width: 73%;
+    margin: auto;
+
+}
+.head{
+    width: 80%;
+    margin: auto;
+
+}
+header{
+    color: wheat;
+    background:rgb(0 0 0);
+    min-height: 200px;
+    padding: 20px;  
+    margin: auto;
+  
+}
+.left{
+    float: left;
+    padding: 0;
+    margin: 0;   
+}
+.right{
+    margin: 26px;
+    float: right;
+    display: flex;
+}
+.clear{
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin-left:10px ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}.head li.current a, .head a:hover{
+    color: rgb(27, 102, 167);
+    border-bottom: rgb(27, 102, 167) 5px solid; 
+}
+.current{
+    color: rgb(27, 102, 167);
+    border-bottom: rgb(27, 102, 167) 5px solid; 
+}
+.view{
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color:  rgb(2 35 64);
+}
+img{
+    
+}
+
+.gallery{
+    width: 100%;
+    
+
+}
+.gallery li{
+    display: block;
+    float: left;
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+    margin: 0 11px 7px 0;
+    position: relative;
+}
+
+.overlay{
+    display: none;
+    pointer-events: none !important;
+    position: absolute;
+    background: #06bde6 ;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height:  100%;
+    opacity: .5;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+
+}
+.overlay h3{
+    margin: 0;
+    padding: 0;
+}
+
+.overlay img{
+    pointer-events: none !important;
+}
+.overlay a{
+    pointer-events: none !important;
+}
+.disabled:active {
+    pointer-events: none;
+}
+.gallery img{
+    width: 100%;
+    height: 200px;
+    
+}
+
+
+
+footer{
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 98, 245, 0.733);
+    padding: 20px;
+}
+@media(max-width:968px){
+    .head ul{
+        text-align: center;
+        float: none;
+        padding: 0;
+       
+    }
+    
+    .left , .right{
+        float: none;
+        text-align: center;
+        width: 100%;
+        display: block;
+        
+    }
+    .right li{
+        margin: 15px;
+    }
+    .gallery li{
+        width: 40%;
+    }
+}
+
+
+@media(max-width:768px){
+    .gallery li{
+        width: 100%;
+    }
+}
