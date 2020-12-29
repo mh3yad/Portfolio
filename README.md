@@ -6,8 +6,8 @@ simple protoflio app
 - [CSS3](/build/documentary.md)
 - [jQuery](/build/tv_series.md)
 
-#Features
+# Features
 - fully responsive to fit all devices
 
-#link
+# link
 * [Protoflio](https://suspicious-edison-12279b.netlify.app/)
